@@ -5,7 +5,7 @@
 ## HYPER == SHIFT + CMD + ALT + OPTION
 
 ## Quickly restart the yabai launch agent
-ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+# ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 ## Close active application
 hyper - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
@@ -25,24 +25,24 @@ hyper - y : yabai -m window --swap west
 hyper - 0x21 : yabai -m window --swap east # 0x21 is the "[" key
 
 ## send window to monitor and follow focus
-hyper - u : /Users/justinschmitt/CustomScripts/SwitchSpaces/moveWindowLeftAndFollowFocus2.sh
-hyper - p : /Users/justinschmitt/CustomScripts/SwitchSpaces/moveWindowRightAndFollowFocus.sh
+# hyper - u : /Users/justinschmitt/CustomScripts/SwitchSpaces/moveWindowLeftAndFollowFocus2.sh
+# hyper - p : /Users/justinschmitt/CustomScripts/SwitchSpaces/moveWindowRightAndFollowFocus.sh
 
 ## send window to specific monitor and follow
-hyper - 1 : /Users/justinschmitt/CustomScripts/SwitchSpaces/test.sh 1
-hyper - 2 : /Users/justinschmitt/CustomScripts/SwitchSpaces/test.sh 2
-hyper - 3 : /Users/justinschmitt/CustomScripts/SwitchSpaces/test.sh 3
-hyper - 4 : /Users/justinschmitt/CustomScripts/SwitchSpaces/test.sh 4
-hyper - 5 : /Users/justinschmitt/CustomScripts/SwitchSpaces/test.sh 5
+# hyper - 1 : /Users/xga718/CustomScripts/SwitchSpaces/test.sh 1
+# hyper - 2 : /Users/xga718/CustomScripts/SwitchSpaces/test.sh 2
+# hyper - 3 : /Users/xga718/CustomScripts/SwitchSpaces/test.sh 3
+# hyper - 4 : /Users/xga718/CustomScripts/SwitchSpaces/test.sh 4
+# hyper - 5 : /Users/xga718/CustomScripts/SwitchSpaces/test.sh 5
 
 
 #hyper - 2 : /Users/justinschmitt/CustomScripts/SwitchSpaces/switchAndFocus.sh 2
 #hyper - 3 : /Users/justinschmitt/CustomScripts/SwitchSpaces/switchAndFocus.sh 3
 
 ## focus display
-ctrl + cmd - 1 : yabai -m window --display 1 yabai -m display --focus 1
-ctrl + cmd - 2 : yabai -m window --display 2 yabai -m display --focus 2
-ctrl + cmd - 3 : yabai -m window --display 3 yabai -m display --focus 3
+# ctrl + cmd - 1 : yabai -m window --display 1 yabai -m display --focus 1
+# ctrl + cmd - 2 : yabai -m window --display 2 yabai -m display --focus 2
+# ctrl + cmd - 3 : yabai -m window --display 3 yabai -m display --focus 3
 
 ## increase window size
 #shift + alt - a : yabai -m window --resize left:-20:0
@@ -57,7 +57,7 @@ ctrl + cmd - 3 : yabai -m window --display 3 yabai -m display --focus 3
 #shift + cmd - d : yabai -m window --resize right:-20:0
 
 ## rotate tree 90
-hyper - r : yabai -m space --rotate 90
+# hyper - r : yabai -m space --rotate 90
 
 ## flip the tree vertically
 hyper - e : yabai -m space --mirror y-axis
@@ -80,7 +80,7 @@ shift + lalt + lcmd + ctrl + ralt - 3 : yabai -m query --spaces --space | jq -re
 # ctrl + alt + cmd + lshift - 3 : /Users/justinschmitt/CustomScrip1ts/SwitchSpaces/switchAndFocusSIP.sh 3
 
 ## toggle window fullscreen zoom
-hyper - f : yabai -m window --toggle zoom-fullscreen
+# hyper - f : yabai -m window --toggle zoom-fullscreen
 
 # cycle through windows
 # cycle backwards
